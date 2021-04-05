@@ -77,28 +77,3 @@ Go and create page
 http://site.com/admin/pages
 http://site.com/pages/default/index
 ```
-
-For Development
------
-
-```
-"repositories":[
-    {
-        "type": "path",
-        "url": "extensions/thefx/*"
-    }
-]
-```
-
-Either run
-
-```
-composer require thefx/yii2-pages:dev-master --prefer-source
-```
-
-
-Refresh Migrations
-
-```
-php yii migrate/fresh --migrationPath=@thefx/pages/migrations
-```
