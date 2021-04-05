@@ -1,0 +1,24 @@
+{
+    "name": "thefx/yii2-pages",
+    "description": "Pages",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "3FoX",
+            "email": "fenixq@mail.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.5",
+        "la-haute-societe/yii2-save-relations-behavior": "^1.2",
+        "paulzi/yii2-nested-sets": "^1.0",
+        "vova07/yii2-imperavi-widget": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "thefx\\pages\\": ""
+        }
+    }
+}
