@@ -2,7 +2,7 @@
 
 namespace thefx\pages\actions;
 
-use app\shop\entities\Page\Pages;
+use thefx\pages\models\Page;
 use Yii;
 use yii\base\Action;
 use yii\helpers\ArrayHelper;
@@ -20,7 +20,7 @@ class GetPageAction extends Action
 
         $out = ['results' => ['id' => '', 'value' => '']];
 
-        $goods = Pages::find()
+        $goods = Page::find()
             ->select(['id', 'title'])
             ->where(['like', 'Name', $q])
             ->orderBy('Name')

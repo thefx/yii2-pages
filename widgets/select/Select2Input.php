@@ -2,7 +2,7 @@
 
 namespace thefx\pages\widgets\select;
 
-use thefx\blocks\assets\Select2Asset\Select2Asset;
+use thefx\pages\assets\Select2Asset\Select2Asset;
 use yii\widgets\InputWidget;
 
 class Select2Input extends InputWidget
