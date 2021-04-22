@@ -51,7 +51,7 @@ class DefaultController extends Controller
 
     public function beforeAction($action)
     {
-        if ($action->id === 'tree-move') {
+        if ($action->id === 'tree-move' || $action->id === 'delete') {
             $this->enableCsrfValidation = false;
         }
 
