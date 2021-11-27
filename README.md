@@ -45,6 +45,7 @@ return [
         'pages' => [
             'class' => 'thefx\pages\Module',
             'layout' => 'main',
+            'layoutPure' => 'pure',
             'layoutPath' => '@app/modules/admin/layouts',
         ...
         ]
