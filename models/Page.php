@@ -45,7 +45,7 @@ class Page extends \yii\db\ActiveRecord
     {
         return [
             [['title'], 'required'],
-            [['text'], 'string'],
+            [['text', 'seo_title', 'seo_keywords', 'seo_description'], 'string'],
             [['parent_id', 'lft', 'rgt', 'depth', 'create_user', 'update_user', 'public'], 'integer'],
             [['create_date', 'update_date'], 'safe'],
             [['title', 'path'], 'string', 'max' => 255],
